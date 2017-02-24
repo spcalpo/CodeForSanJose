@@ -1,0 +1,13 @@
+-------------------------------
+Sally's Code For San Jose Stuff
+-------------------------------
+Just a small repository for random civic hacking scripts and stuff.
+
+Updates
+-------
+2/24/2017 12:36am Created this repo w/first attempt experimenting with node.js http object.
+
+Contents
+--------
+ParkDataParse - Performs park searches from CSV, scrapes results for further processing. 
+For use w/Adopt-A-Park web project. Uses node.js+jsdom (https://github.com/tmpvar/jsdom).  
