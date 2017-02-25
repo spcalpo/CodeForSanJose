@@ -2,11 +2,13 @@
 Sally's Code For San Jose Stuff
 -------------------------------
 Just a small repository for random civic hacking scripts and stuff.
+Questions? Email me at spcalpo@gmail.com.
 
 Updates
 -------
 2/24/2017 12:36am Created this repo w/first attempt at park scraping script
+2/25/2017 12:21am Completed functioning version of parkscrape.js
 
-Stuff
------
+Contents
+--------
 ParkScrape - Performs park searches from CSV, scrapes results for further processing. For use w/Adopt-A-Park web project. Uses node.js+jsdom (https://github.com/tmpvar/jsdom).  
