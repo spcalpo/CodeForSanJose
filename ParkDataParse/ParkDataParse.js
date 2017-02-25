@@ -1,17 +1,8 @@
-var http = require('http');
+var jsdom = require('jsdom').jsdom;
 
-var request = http.request({
-  hostname: 'www.google.com',
-  port: 80,
-  path: '/search?q=DE+ANZA+PARK+SAN+JOSE',
-}, (response) => {
-  response.setEncoding('utf8');
-  response.on('data', (data) => {
-    console.log(`${JSON.stringify(data)}`);
-  });
-  response.on('end', () => {
-    console.log('No more data in response.');
-  });
+jsdom.env({
+  url: 'http://www.google.com/search?q=DE+ANZA+PARK+SAN+JOSE',
+  done: (error, window) => {
+    console.log(window.document.documentElement.innerHTML);
+  },
 });
-
-request.end();
